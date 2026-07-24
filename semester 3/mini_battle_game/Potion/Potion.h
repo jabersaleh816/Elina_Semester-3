@@ -13,7 +13,7 @@ private:
 
 public:
     Potion();
-    Potion(std::string name, int healing_amount);
+    Potion(const std::string& name, int healing_amount);
     ~Potion();
 
     void use(Player& player);

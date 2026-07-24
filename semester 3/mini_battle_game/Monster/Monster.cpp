@@ -4,7 +4,7 @@
 
 Monster::Monster() : Monster("Default_Monster", 20, 100) {}
 
-Monster::Monster(std::string name, int power, int max_health)
+Monster::Monster(const std::string& name, int power, int max_health)
     : name(name),
       current_health(max_health),
       max_health(max_health),
@@ -30,7 +30,7 @@ void Monster::takeDamage(int damage) {
     }
 }
 
-void Monster::attackPlayer(Player& player) {
+void Monster::attackPlayer(Player& player)const {
     player.takeDamage(power);
 }
 

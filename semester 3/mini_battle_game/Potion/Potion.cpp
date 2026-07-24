@@ -4,7 +4,7 @@
 
 Potion::Potion() : Potion("Default_Potion", 20) {}
 
-Potion::Potion(std::string name, int healing_amount)
+Potion::Potion(const std::string& name, int healing_amount)
     : name(name),
       healing_amount(healing_amount),
       used(false) {

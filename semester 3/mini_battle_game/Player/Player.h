@@ -15,11 +15,11 @@ private:
 
 public:
     Player();
-    Player(std::string name, int power, int max_health);
+    Player(const std::string& name, int power, int max_health);
     ~Player();
 
     void takeDamage(int damage);
-    void attackMonster(Monster& monster);
+    void attackMonster(Monster& monster) const;
     void heal(int amount);
     bool isAlive() const;
     int status() const;
