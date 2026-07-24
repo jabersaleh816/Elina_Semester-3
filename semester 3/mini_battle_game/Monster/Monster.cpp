@@ -1,5 +1,5 @@
 #include "Monster.h"
-#include "Player.h"
+#include "../Player/Player.h"
 #include <iostream>
 
 Monster::Monster() : Monster("Default_Monster", 20, 100) {}

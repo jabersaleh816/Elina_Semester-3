@@ -1,9 +1,9 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "Player.h"
-#include "Monster.h"
-#include "Potion.h"
+#include "../Player/Player.h"
+#include "../Monster/Monster.h"
+#include "../Potion/Potion.h"
 
 class Game {
 private:
