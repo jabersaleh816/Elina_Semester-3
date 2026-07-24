@@ -9,13 +9,12 @@ Game::Game()
 Game::~Game() {}
 
 void Game::run() {
+    cout << "==============================" << endl;
     cout << "Welcome to Mini Battle Game!" << endl;
+    cout << "==============================" << endl;
 
     while (!game_over) {
         cout << "\n===== Turn " << (round + 1) << " =====" << endl;
-        player.showStatus();
-        monster.showStatus();
-        potion.showStatus();
 
         if (!player.isAlive()) {
             cout << "You lost!" << endl;
@@ -61,8 +60,10 @@ void Game::run() {
                 cout << "You used the potion." << endl;
             }
         } else if (choice == 3) {
+            cout << "\n--- Current Status ---" << endl;
             player.showStatus();
             monster.showStatus();
+            potion.showStatus();
         } else if (choice == 4) {
             cout << "You exited the game." << endl;
             game_over = true;
