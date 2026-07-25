@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Player;
+class Player; // Forward declaration of the Player class to avoid circular dependency
 
 class Monster {
 private:

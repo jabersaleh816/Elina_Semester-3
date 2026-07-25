@@ -1,0 +1,15 @@
+Q1.The attack function can be const because it only sends a Parameter to a different object and it doesn’t do any changes, the change is made in the other objects damage function.
+
+Q2.The damage function can’t be const because this function has to change some values in the object.
+
+Q3.When using the potion it needs to be done on the exact same object and not on a pass by value because then the changes will be done on a copy of the object and the second the function ends the copy dies with it.
+
+Q4.Because all these objects can live alone they all live inside the game and belongs to it and when the game ends all of them dies with the game and can’t continue without it.
+
+Q5.because we can’t start the game without the objects being there so we have the constructor to do it for us.
+
+Q6.The encapsulation provide privacy for our data that we don’t want anyone change whenever he wants for example the health is not something that anyone can change to whatever he wants to whatever he wants it can be done only by a specific function.
+
+Q7.The .h file is only to declare what functions we are going to use and then we fill them in the .cpp file.
+
+Q8.The main.cpp has to be short because the only purpose of it is to be the entry point for the game and everything has to be done behind the scenes.

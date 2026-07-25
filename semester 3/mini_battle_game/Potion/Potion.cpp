@@ -1,10 +1,10 @@
-#include "../Player/Player.h"
-#include "Potion.h"
+#include "../Player/Player.h" // Include the Player class header file
+#include "Potion.h" // Include the Potion class header file
 #include <iostream>
 
-Potion::Potion() : Potion("Default_Potion", 20) {}
+Potion::Potion() : Potion("Default_Potion", 20) {}// Default constructor with default values
 
-Potion::Potion(const std::string& name, int healing_amount)
+Potion::Potion(const std::string& name, int healing_amount) // Parameterized constructor and overloaded constructor
     : name(name),
       healing_amount(healing_amount),
       used(false) {
@@ -13,7 +13,7 @@ Potion::Potion(const std::string& name, int healing_amount)
     }
 }
 
-Potion::~Potion() {}
+Potion::~Potion() {} // Destructor
 
 void Potion::use(Player& player) {
     if (!used) {
