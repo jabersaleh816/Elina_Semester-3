@@ -1,5 +1,5 @@
 #include "Monster.h"
-#include "../Player/Player.h" // Include the Player class header file
+#include "Player.h" // Include the Player class header file
 #include <iostream>
 
 Monster::Monster() : Monster("Default_Monster", 20, 100) {} // Default constructor with default values

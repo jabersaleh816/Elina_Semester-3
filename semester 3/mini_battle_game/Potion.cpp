@@ -1,4 +1,4 @@
-#include "../Player/Player.h" // Include the Player class header file
+#include "Player.h" // Include the Player class header file
 #include "Potion.h" // Include the Potion class header file
 #include <iostream>
 
