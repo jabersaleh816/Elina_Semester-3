@@ -1,9 +1,11 @@
-/build/
-/output/
+# Compiled and generated files
 *.o
+*.obj
 *.exe
 *.out
-*.log
-.vscode/
-Semester 3/Stack/main
-semester 3/Stack/output/
+*.app
+build/
+output/
+bin/
+main
+game
